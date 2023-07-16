@@ -6,6 +6,10 @@
     <title>URL Shortener</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>URL Shortener</h1>
+    <form>
+        <input type="text" placeholder="Enter URL">
+        <input type="submit" value="Shorten">
+    </form>
 </body>
 </html>
