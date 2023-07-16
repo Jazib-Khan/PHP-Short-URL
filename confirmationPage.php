@@ -8,9 +8,9 @@
 
     if (!$row) {
         header("Location: failurePage.php");
-        echo "<br>";
-        echo "<a href='index.php'>Go back</a>";
     } else {
         echo "Your short URL is: <a href='$row[0]'>localhost/" . "$shortUrl</a>";
+        echo "<br>";
+        echo "<a href='index.php'>Go back</a>";
     }
 ?>
