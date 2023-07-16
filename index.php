@@ -15,7 +15,20 @@
 </html>
 
 <?php
+    if(isset($_POST['subUrl'])){
+        $conn = mysqli_connect("localhost","root","","url");
+        if(!$conn){
+            die("Connection failed: ".mysqli_connect_error());
+        }
 
+    $url=$_POST['inputUrl'];
+    $rand= substr(md5(microtime()),rand(0,26),5);
+
+    mysqli_query($conn, "INSERT INTO short_url (url, rand) values ('$url','$rand')");
+
+    echo "<a href='$url'>localhost/$rand</a>";
+
+    }
 
 
 ?>
