@@ -7,9 +7,15 @@
 </head>
 <body>
     <h1>URL Shortener</h1>
-    <form>
-        <input type="text" placeholder="Enter URL">
-        <input type="submit" value="Shorten">
+    <form method="post">
+        <input type="text" name="inputUrl" placeholder="Enter URL">
+        <input type="submit" name="subUrl" value="Shorten">
     </form>
 </body>
 </html>
+
+<?php
+
+
+
+?>
