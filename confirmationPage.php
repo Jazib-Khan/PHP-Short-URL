@@ -10,7 +10,7 @@
         header("Location: failurePage.php");
     } else {
         echo "<h1>Short URL successfully generated</h1>";
-        echo "Your short URL is: <a href='$row[0]'>localhost/" . "$shortUrl</a>";
+        echo "Your short URL is: <a href='$row[0]'>localhost/PHP-SHORT-URL/" . "$shortUrl</a>";
         echo "<br>";
         echo "<a href='index.php'>Go back</a>";
     }
